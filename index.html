@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6 - Optimus Tech</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    h1 {
+        font-size: 25px;
+    }
+
+    .menu_navegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul,
+    li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+        color: grey;
+    }
+
+    .cadastrar {
+        color: white;
+        background-color: brown;
+        border-radius: 10px;
+        border-color: transparent;
+        height: 35px;
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item_1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item_2 {
+        margin-top: 7px;
+    }
+
+    .item_3 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 7px;
+    }
+
+    .img {
+        width: 30px;
+        height: 30px;
+        padding-top: 16px;
+        margin-right: 10px;
+    }
+
+    .teste {
+        display: flex;
+        flex-direction: row;
+        padding-left: 60px;
+    }
+
+    p {
+        color: gray;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .text_1 {
+        font-size: 20px;
+        color: #8e2424;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .text_2 {
+        font-size: 50px;
+        color: black;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .text_3 {
+        text-align: center;
+        font-size: 25px;
+        color: #667085;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .dados {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 90px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+
+    .dados_1 {
+        font-size: 70px;
+        font-weight: bold;
+        color: #8e2424;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .dados_2 {
+        font-size: 20px;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .dados_3 {
+        font-size: 17px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .talentos {
+        align-items: center;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .vagasabertas {
+        color: #8e2424;
+        background-color: #f9f3f3;
+        border-radius: 10px;
+        height: 30px;
+        border-color: transparent;
+        margin-top: 80px;
+        font-size: 15px;
+        width: 120px;
+    
+    }
+    .info1 {
+        font-size: 65px;
+        font-weight: bold;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    .info2 {
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .reuniao {
+        width: 1500px;
+    }
+    .vagas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos {
+        color: black;
+        font-size: 25px;
+    }
+    .sub_titulos {
+        color: black;
+        font-size: 25px;
+    }
+    .productDesigner {
+        border-radius: 10px;
+        width: 900px;
+        padding: 1px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: rgba(234, 236, 240, 1);
+        margin-top: 15px;
+        border-width: 1px;
+    }
+    .UXDesigner {
+        border-radius: 10px;
+        width: 900px;
+        padding: 1px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: rgba(234, 236, 240, 1);
+        margin-top: 15px;
+        border-width: 1px;
+    }
+    .Desenvolvedor_IOS {
+        border-radius: 10px;
+        width: 900px;
+        padding: 1px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: rgba(234, 236, 240, 1);
+        border-width: 1px;
+    }
+    .Desenvolvedor_front {
+        border-radius: 10px;
+        width: 900px;
+        padding: 1px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: rgba(234, 236, 240, 1);
+        margin-top: 15px;
+        border-width: 1px;
+    }
+    .Desenvolvedor_back {
+        border-radius: 10px;
+        width: 900px;
+        padding: 1px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: rgba(234, 236, 240, 1);
+        margin-top: 15px;
+        border-width: 1px;
+    }
+    .conteudo {
+        color: #667085;
+    }
+    .colaboradores {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(249, 243, 243);
+        border-radius: 10px;
+        margin-top: 80px;
+        width: 1500px;
+        justify-content: center;
+    }
+    .dd1 {
+        color: #8e2424;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .dd2 {
+        color: black;
+        font-size: 50px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .dd3 {
+        color: black;
+        font-size: 17px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .Avatar {
+        padding-top: 20px;
+    }
+    .rodapé {
+        background-color: rgb(249, 250, 251);
+        text-align: center;
+        margin-top: 80px;
+        padding: 150px;
+    }
+    .dd10 {
+        font-weight: bold;
+        color: black;
+        font-size: 40px;
+        margin: 0px;
+    }
+    .dd11 {
+        font-size: 23px;
+        margin-top: 10px;
+    }
+    .dd12 {
+        padding: 14px;
+        border-radius: 10px;
+        border-color: rgb(208, 213, 221);
+        border-style: solid;
+        border-width: 1px;
+    }
+    .dd13 {
+        background-color: #8e2424;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        border: transparent;
+        margin-left: 15px;
+        font-size: 17px;
+    }
+    .dd14 {
+        font-size: 18px;
+    }
+    .gambiarra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="menu_navegacao">
+        <div class="teste">
+            <div class="item_1">
+                <img src="logo.png" class="img">
+                <h1>OptimusTech</h1>
+            </div>
+            <div class="item_2">
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Recursos</li>
+                    <li>Sobre nós</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item_3">
+            <p>Entrar</p>
+            <button class="cadastrar">
+                Cadastrar
+            </button>
+        </div>
+    </div>
+
+    <div class="sobre">
+        <p class="text_1"> Sobre nós</p>
+        <p class="text_2"> Por que somos diferentes?</p>
+        <p class="text_3"> Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo <br> a se concentrarem naquilo que é realmente importante para elas.</p>
+    </div>
+
+    <div class="dados">
+        <div class="box">
+            <p class="dados_1">400+</p>
+            <p class="dados_2">Projetos concluidos</p>
+            <p class="dados_3">Nós ajudamos a construir mais de 400 <br> projetos incríveis.</p>
+        </div>
+
+        <div class="box">
+            <p class="dados_1">100+</p>
+            <p class="dados_2">Colaboradores</p>
+            <p class="dados_3">Temos mais de 100 colaboradores no<br> nosso time que se preocupam com<br> nossos clientes.</p>
+        </div>
+
+        <div class="box">
+            <p class="dados_1">20k</p>
+            <p class="dados_2">Downloads</p>
+            <p class="dados_3">Nossos projetos que estão disponíveis<br> em lojas já foram baixados mais de<br> 20.000 vezes.</p>
+        </div>
+
+        <div class="box">
+            <p class="dados_1">500+</p>
+            <p class="dados_2">Reviews 5 estrelas</p>
+            <p class="dados_3">Estamos orgulhosos de contar com<br> mais de 500 reviews 5 estrelas em<br> nossos produtos.</p>
+        </div>
+    </div>
+
+    <div class="talentos">
+        <button class="vagasabertas">
+            Vagas Abertas!
+        </button>
+        <p class="info1">Estamos procurando por talentos</p>
+        <p class="info2">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+        <img class="reuniao" src="reuniao.png">
+    </div>
+
+    <div class="vagas">
+        <div class="design">
+            <p class="titulos">Design</p>
+            <div class="productDesigner">
+                <p class="sub_titulos">Product Designer</p>
+                <p class="conteudo">Full-time    Faixa salarial: R$7.000</p>
+            </div>
+            <div class="UXDesigner">
+                <p class="sub_titulos">UX Designer</p>
+                <p class="conteudo">Full-time    Faixa salarial: R$6.000</p>
+            </div>
+        </div>
+        <div class="desenvolvimento_de_Software">
+            <p class="titulos">Desenvolvimento de Software</p>
+            <div class="Desenvolvedor_IOS">
+                <p class="sub_titulos">Desenvolvedor(a) iOS</p>
+                <p class="conteudo">Full-time   Faixa salarial: R$8.000</p>
+            </div>
+            <div class="Desenvolvedor_front">
+                <p class="sub_titulos">Desenvolvedor(a) Front-end</p>
+                <p class="conteudo">Full-time    Faixa salarial: R$7.000</p>
+            </div>
+            <div class="Desenvolvedor_back">
+                <p class="sub_titulos">Desenvolvedor(a) Back-end</p>
+                <p class="conteudo">Full-time    Faixa salarial: R$8.000</p>
+            </div>
+        </div>
+    </div>
+    <div class="gambiarra">
+        <div class="colaboradores">
+            <p class="dd1">Veja o que nossos colaboradores falam sobre nós</p>
+            <p class="dd2">OptimusTech se importa com a saúde dos seus colaboradores e <br> sempre procura nos dar todo tipo de auxílio possível.</p>
+            <img class="Avatar" src="Avatar.png">
+            <p class="dd3">Júlia Castro</p>
+            <p class="dd4">Desenvolvedora Web</p>
+        </div>
+    </div>
+    <div class="rodapé">
+        <p class="dd10">Acompanhe as nossas oportunidades</p>
+        <p class="dd11">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+        <input class="dd12" type="text" placeholder="Seu e-mail"> 
+        <button class="dd13">
+            Cadastrar
+        </button>
+        <p class="dd14">© 2022 OptimusTech. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
